@@ -9,7 +9,9 @@ Returns valid HTML element/s.
 ## Class synopsis
 ```
 Html {
+
   //Methods
+  
   tag(string $tag, mixed $content = null, string custom = null) : string
   div(mixed $content, string custom = '') : string
   a(mixed $content, string custom = '')   : string
