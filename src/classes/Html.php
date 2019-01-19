@@ -29,7 +29,7 @@ class Html
     {
         $components = $this->extractComponents($components);
         foreach($components as $key => $value)
-            $this->components[$key] = $value;
+            $this->components[$key] =  $value;
     }
 
     private function extractComponents(Array $components)
@@ -38,7 +38,7 @@ class Html
         $components = $is_array ? $components['content'] : $components;
 
         $components['attributes'] = $this->assembleAttributes($components);
-        $components[] = $this->getNonAttributePairs($components);
+        $components[]             = $this->getNonAttributePairs($components);
 
         return $components;
     }
