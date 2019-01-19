@@ -1,4 +1,4 @@
-comp# Documentation for html.class.php
+# Documentation for html.class.php
 
 ## The Html Class
 (PHP 5, PHP 7)
