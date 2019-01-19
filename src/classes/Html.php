@@ -1,4 +1,6 @@
 <?php
+namespace ITsandbox;
+
 class Html
 {
     private $non_attribute_pairs = array(
@@ -51,7 +53,8 @@ class Html
     private function assembleAttributes(Array $components)
     {
         $attributes_pairs = $this->extractAttributePairs($components);
-        return $this->assembleAttributePairs($attributes_pairs);
+        return empty($attributes_pairs) ? false : 
+            $this->assembleAttributePairs($attributes_pairs);
     }
 
     private function extractAttributePairs($components)
@@ -71,17 +74,3 @@ class Html
         return implode(' ', $attributes);
     }
 }
-
-$Html = new Html;
-
-$div = array(
-    'content'   => 'Content',
-    'class'     => 'container',
-    'custom'    => 'disabled',
-    'tag'       => 'div',
-    'id'        => '34',
-    'name'      => 'main_paragraph'
-);
-
-echo $Html->tag($div);
-// echo $Html->tag('Content', 'div', 'class="container"');
