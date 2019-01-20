@@ -5,14 +5,19 @@ Use ITsandbox\Html;
 
 $Html = new ITsandbox\Html;
 
-$div = array(
-    'content'   => 'Content',
-    'class'     => 'container',
-    'custom'    => 'disabled',
-    'tag'       => 'div',
-    'id'        => '34',
-    'name'      => 'main_paragraph'
-);
+$Html->tag('a');
 
-// echo $Html->tag($div);
-echo $Html->tag('Content', 'div', 'class="container"');
+// $p = array(
+//     'content'   => 'content',
+//     'class'     => 'css_class',
+//     'name'      => 'main_paragraph',
+//     'id'        => '2',
+//     'custom'    => 'disabled'
+// );
+// $main_paragraph =  $Html->p($p);
+// $div = array(
+//     'content'   => $main_paragraph,
+//     'class'     => 'container'
+// );
+
+// echo $Html->div($div);

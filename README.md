@@ -125,11 +125,5 @@ $Html->a();
 ```
 ### Uncaught TypeError
 ```
-$Html->tag(array())
-```
-
-### Returns an empty tag.
-```
-$Html->a('');      // <a > </a>
-$Html->a(array()); // <a > </a>
+$Html->tag(array());
 ```
