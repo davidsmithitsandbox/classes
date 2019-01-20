@@ -1,8 +1,4 @@
 {
-    "require": {
-        "nesbot/carbon": "^2.10",
-        "phpunit/phpunit": "^7.5"
-    },
     "autoload": {
         "psr-4": {"ITsandbox\\": "src/classes"}
     }
