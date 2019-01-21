@@ -1,5 +1,8 @@
 {
     "autoload": {
-        "psr-4": {"ITsandbox\\": "src/single_class_solutions/HtmlElementMaker"}
+        "psr-4": {
+            "ITsandbox\\": "src/single_class_solutions/HtmlElementMaker",
+            "ITsandbox\\": "src/design_patterns/observer"
+        }
     }
 }
