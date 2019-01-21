@@ -21,7 +21,7 @@ HtmlElementMaker {
   array(
       'tag'     => 'Specifies an HTML tag. Example: a, p, div etc',
       'content' => 'The value of this key is placed between HTML tags.'
-      'custom'  => 'The value of this keys assumed to be an attribute. Example: disabled, color="white"', // Outputs 'disabled', color="white"
+      'custom'  => 'The value of this key is assumed to be an attribute. Example: disabled, color="white"', // Outputs 'disabled', color="white"
 
       // All other keys are assumed to be attributes
       'name'    => 'name', // Outputs name="name" as an attribute for the element
