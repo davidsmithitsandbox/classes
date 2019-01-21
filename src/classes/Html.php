@@ -237,8 +237,8 @@ class Html
      * Takes an associative array and returns a string in this format
      *      key = "value"
      *
-     * @param Array $attribute_pairs
-     * @return void
+     * @param  Array $attribute_pairs
+     * @return String
      */
     private function assembleAttributePairs(Array $attribute_pairs)
     {
