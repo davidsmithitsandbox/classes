@@ -5,8 +5,6 @@ Use ITsandbox\HtmlElementMaker;
 
 $Html = new ITsandbox\HtmlElementMaker;
 
-$Html->tag('a');
-
 $p = array(
     'content'   => 'content',
     'class'     => 'css_class',

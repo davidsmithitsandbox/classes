@@ -16,13 +16,23 @@ HtmlElementMaker {
   div(mixed $content, string custom = '') : string
   a(mixed $content, string custom = '')   : string
   p(mixed $content, string custom = '')   : string
+
+  // You can pass an associative array into the public methods.
+  array(
+      'tag'     => 'Specifies an HTML tag. Example: a, p, div etc',
+      'content' => 'The value of this key is placed between HTML tags.',
+      'custom'  => 'The value of this key is assumed to be an attribute. Example: disabled, color="white"', // Outputs 'disabled', color="white"
+
+      // All other keys are assumed to be attributes
+      'name'    => 'name', // Outputs name="name" as an attribute for the element
+  );
 }
 ```
 ## Examples
 
 ### Instantiate our class.
 ```
-$Html = new Html;
+$Html = new HtmlElementMaker;
 ```
 
 ### Let's start with the simplest example;
@@ -90,6 +100,13 @@ content
 
 ### Now let's throw it in a div!
 ```
+$p = array(
+    'content'   => 'content',
+    'class'     => 'css_class',
+    'name'      => 'main_paragraph',
+    'id'        => '2',
+    'custom'    => 'disabled'
+);
 $main_paragraph =  $Html->p($p);
 echo $Html->div($main_paragraph, 'class="container"');
 ```
