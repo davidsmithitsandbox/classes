@@ -1,7 +1,7 @@
 <?php
 namespace ITsandbox;
 
-class Html
+class HtmlElementMaker
 {
 
     /**
