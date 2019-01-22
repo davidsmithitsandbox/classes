@@ -16,11 +16,6 @@ class Observer implements SplObserver
         $this->priority = $priority;
     }
 
-    public function name()
-    {
-        echo 'IN ' . __CLASS__;
-    }
-
     public function update(SplSubject $publisher)
     {
         print_r($this->name.': '. $publisher->getEvent(). PHP_EOL);
