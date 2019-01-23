@@ -1,7 +1,7 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
+// require __DIR__ . '/vendor/autoload.php';
 
-use ITsandbox\HtmlElementMaker;
+// use ITsandbox\HtmlElementMaker;
 
-$Html = new HtmlElementMaker;
-echo $Html->div('content');
+// $Html = new HtmlElementMaker;
+// echo $Html->div('content');
