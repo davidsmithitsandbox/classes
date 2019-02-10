@@ -1,7 +1,7 @@
 # Code Base
 
 This repository is a curation of:
-- Complete useful standalone classes
+- Useful standalone classes
 - Demonstration of design patters
 - Demonstration of algorithms
 
